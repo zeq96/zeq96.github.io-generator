@@ -1,0 +1,4 @@
+baseURL = "https://zeq96.github.io/"
+languageCode = "zh-Hans"
+title = "Andrew的小窝"
+theme = "ananke"
