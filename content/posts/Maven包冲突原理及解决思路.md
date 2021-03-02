@@ -4,7 +4,6 @@ date: 2021-03-02T10:32:29+08:00
 draft: false
 ---
 
-# Maven包冲突原理及解决思路
 ## Maven包冲突原理
 当程序运行抛出如下异常时：
 
@@ -33,7 +32,7 @@ E -> F -> D(version2.0)
 第一种：在idea中点击右边的maven窗口(实际项目中依赖树可能很长，难用肉眼排查)
 ![](/images/dependency.jpg)
 第二种:在终端里执行mvn命令，重定向到文件中(注意：显示的依赖树是解决冲突之后的！！！)  
-`$ mvn dependency:tree > yourFileName.txt`
+`$ mvn dependency:tree > yourFileName.txt`  
 第三种：在idea plugins中下载Maven Helper插件(推荐)
 如下图所示：spring-web4.3.6根据maven包管理的就近原则被忽略掉了
 ![](/images/helper.jpg)
